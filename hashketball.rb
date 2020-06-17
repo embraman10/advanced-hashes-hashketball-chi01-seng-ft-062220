@@ -141,3 +141,24 @@ def shoe_size (player_shoe)
   end
       total_points
   end
+
+
+def team_colors
+
+end
+
+def team_names
+
+end
+
+def player_numbers (player_number)
+  total_points = 0
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |stats|
+         if stats[:player_name] == player_number
+              total_points = stats[:number]
+          end
+    end
+  end
+      total_points
+  end
