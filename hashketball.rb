@@ -144,13 +144,13 @@ def shoe_size (player_shoe)
 
 
 def team_colors (team_col)
-  jerseys = " "
+  total_points = " "
   game_hash.each do |team, team_info|
-    if team_info[:team_name] == team_nam
-        total_points = team_nam[:team_colors]
+    if team_info[:team_name] == team_col
+        total_points = team_info[:team_colors]
       end
     end
-    jerseys
+    total_points
 end
 
 
