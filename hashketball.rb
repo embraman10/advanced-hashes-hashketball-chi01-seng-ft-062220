@@ -144,7 +144,7 @@ def shoe_size (player_shoe)
 
 
 def team_colors (team_col)
-  game_hash[:team_name][:team_colors]
+  game_hash[:team_name][:team_colors].each
 end
 
 
