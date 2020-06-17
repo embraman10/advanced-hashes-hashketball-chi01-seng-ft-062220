@@ -146,6 +146,7 @@ def shoe_size (player_shoe)
 def team_colors (team_col)
   jersey_colors= 0
   game_hash.collect do |team|
+    binding.pry
     if team[:team_name].each == team_col
       binding.pry
       jersey_colors = team[:team_colors]
