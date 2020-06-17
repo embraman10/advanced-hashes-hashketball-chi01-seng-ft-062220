@@ -151,7 +151,7 @@ def team_colors (team_col)
         total_points = stats[:team_colors]
       end
     end
-
+    total_points
 end
 
 
