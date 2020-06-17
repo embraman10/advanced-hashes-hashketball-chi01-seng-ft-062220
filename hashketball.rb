@@ -150,7 +150,7 @@ def team_colors (team_col)
       end
     end
   end
-
+end
 
 
 def team_names
