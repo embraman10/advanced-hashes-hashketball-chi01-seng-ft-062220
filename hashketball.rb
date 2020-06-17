@@ -121,14 +121,10 @@ end
 
 
 
-def player_stats(name)
-  hash_of_players_stats = {}
-  game_hash.each do |key, value|
-    value[:players].each do |player_name|
-      if name == player_name[:player_name]
-        hash_of_players_stats << :player_name.delete(:player_name)
-      end
+def num_points_scored (team_name)
+  game_hash.each do |team,stats|
+    stats[:players].collect do |player|
+      player[:points] if player[:player_name] == team_name
     end
-  end
-  hash_of_players_stats
+  end.flatten.compact.first
 end
