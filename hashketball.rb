@@ -150,6 +150,7 @@ jersey_colors= 0
       jersey_colors = team[:team_colors]
     end
   end
+  jersey_colors
 end
 
 
