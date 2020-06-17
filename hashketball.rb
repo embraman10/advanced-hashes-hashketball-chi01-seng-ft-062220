@@ -123,6 +123,7 @@ def num_points_scored (player_points)
     stats[:players].collect do |player|
       if player[:player_name][:points] == player_points
         binding.pry
+      end
     end
   end
 end
