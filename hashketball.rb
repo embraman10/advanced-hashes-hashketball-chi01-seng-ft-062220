@@ -148,6 +148,7 @@ def team_colors (team_col)
   game_hash.each do |team, team_info|
     if team_info[:team_name] == team_col
         total_points = team_info[:team_colors]
+        binding.pry
       end
     end
     total_points
