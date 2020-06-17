@@ -151,7 +151,6 @@ def team_colors (team_col)
       binding.pry
     end
   end
-end
 
 
 def team_names
