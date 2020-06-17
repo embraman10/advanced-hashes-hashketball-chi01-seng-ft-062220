@@ -148,7 +148,7 @@ def team_colors (team_col)
   game_hash.collect do |team|
     binding.pry
     team[:team_name].each do |colorz|
-      if colorz [:team_colors] = team_col
+      colorz [:team_colors] = team_col
       binding.pry
     end
   end
