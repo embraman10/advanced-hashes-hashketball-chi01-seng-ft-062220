@@ -3,7 +3,6 @@ require "pry"
 
 def game_hash
   {
-    {status:
     home: {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
@@ -126,7 +125,6 @@ def game_hash
         }
       ]
     }
-  }
 }
 end
 
