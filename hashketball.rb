@@ -144,9 +144,11 @@ def shoe_size (player_shoe)
 
 
 def team_colors (team_col)
+  jerseys= 0
   game_hash.collect do |team|
     binding.pry
-    if team[:team_name][:team_colors].each == team_col
+    team[:team_name].each do |colorz|
+      if colorz [:team_colors] = team_col
       binding.pry
     end
   end
