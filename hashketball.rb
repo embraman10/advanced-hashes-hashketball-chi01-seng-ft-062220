@@ -147,7 +147,7 @@ def team_colors (team_col)
   jerseys= 0
   game_hash.collect do |team|
     binding.pry
-    team[:team_name].each do |colorz|
+    if team[:team_name].each do |colorz|
       colorz [:team_colors] = team_col
       binding.pry
     end
