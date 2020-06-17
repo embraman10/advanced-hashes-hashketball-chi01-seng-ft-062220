@@ -152,6 +152,7 @@ def team_colors (team_col)
       end
     end
     total_points
+    binding.pry
 end
 
 
