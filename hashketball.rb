@@ -118,13 +118,10 @@ def game_hash
   }
 end
 
-
-
-
 def num_points_scored (team_name)
   game_hash.each do |team,stats|
     stats[:players].collect do |player|
       player[:points] if player[:player_name] == team_name
     end
-  end.flatten.compact.first
+  end
 end
