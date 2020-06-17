@@ -147,7 +147,7 @@ def team_colors (team_col)
   jersey = " "
   game_hash.each do |team, team_nam|
     if team_info[:team_name] == team_col
-        total_points = team_nam[:team_colors]
+        jersey = team_nam[:team_colors]
       end
     end
     jersey
