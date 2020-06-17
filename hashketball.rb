@@ -1,6 +1,9 @@
 # Write your code below game_hash
+require "pry"
+
 def game_hash
   {
+    {status:
     home: {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
@@ -124,6 +127,19 @@ def game_hash
       ]
     }
   }
+}
 end
 
-# Write code here
+def num_points_scored (team)
+  game_hash[:status][:players].each do |player|
+    puts "#{player[:name]}: #{player[:points]} points"
+  end
+end
+
+def shoe_size(team, player_name)
+
+end
+
+def team_colors (team_name)
+  game_hash[team_name][:team_colors]
+end
