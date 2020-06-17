@@ -147,6 +147,7 @@ def team_colors (team_col)
   game_hash.each do |team, team_nam|
     if team_nam[:team_name] do |jersey|
         team_col[:team_colors] == team_col
+        binding.pry
       end
     end
   end
