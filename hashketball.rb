@@ -148,6 +148,10 @@ def team_colors (team_col)
     binding.pry
     home_away[:team_name].each do |color|
       if color[]
+      end
+    end
+  end
+end
 
 
 def team_names
