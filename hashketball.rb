@@ -119,19 +119,4 @@ def game_hash
 end
 
 
-def num_points_scored(dude)
-  game_hash.each do |place, team|
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-          if player[:player_name] == dude
-            return player[:points]
-          end
-        end
-      end
-end
 
-def shoe_size(name)
-  player = find_the_player(name)
-  player.fetch(:shoe)
-end
