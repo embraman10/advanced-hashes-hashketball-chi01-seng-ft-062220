@@ -146,6 +146,7 @@ def shoe_size (player_shoe)
 def team_colors (team_col)
   total_points = 0
   game_hash.each do |team, team_info|
+    binding.pry
          if team_info[:team_name] == team_col
               total_points = stats[:team_colors]
           end
