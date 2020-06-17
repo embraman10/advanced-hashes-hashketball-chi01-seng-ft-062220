@@ -148,6 +148,6 @@ def team_colors (team_col)
     if team_nam[:team_name].each do |jersey|
       binding.pry
       jersey[:team_colors] == team_col
-      binding.pry
     end
   end
+end
