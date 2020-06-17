@@ -144,8 +144,9 @@ def shoe_size (player_shoe)
 
 
 def team_colors (team_col)
+  jersey_color= 0
   game_hash.each do |home_away, team|
-    home_away[:team_name].each do |color|
+    home_away[:team_name].each
       binding.pry
     end
   end
