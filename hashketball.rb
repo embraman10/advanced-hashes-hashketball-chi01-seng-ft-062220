@@ -147,8 +147,6 @@ def team_colors (team_col)
   game_hash.each do |home_away, team|
     home_away[:team_name].each do |color|
       binding.pry
-      if color[]
-      end
     end
   end
 end
