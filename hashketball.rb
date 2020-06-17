@@ -135,5 +135,4 @@ def player_stats(name)
   game_hash.each do |key, value|
     value[:players].each do |player_name|
     end
-  end
 end
