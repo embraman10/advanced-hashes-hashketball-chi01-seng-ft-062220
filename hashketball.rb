@@ -143,8 +143,11 @@ def shoe_size (player_shoe)
   end
 
 
-def team_colors
-
+def team_colors (home_away)
+  team_col= " "
+  game_hash.each do |team|
+    if team[:team_name] == home_away
+      team_col = team[:team_colors]
 end
 
 def team_names
